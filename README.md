@@ -24,26 +24,13 @@ iemāca burtus, veco rakstību un īstus vārdus no vecas Bībeles lapas.
 - **Raksti uz papīra (beta)**: uzraksti burtus uz papīra un nofotografē, vai raksti ekrānā ar irbuli; Gotika sadala
   rakstīto pa burtiem un pasaka, kuram burtam katrs līdzinās visvairāk.
 - **Lasītava**: priekšvārda teksts fraktūrā; pieskaries vārdam, lai redzētu mūsdienu rakstību un nozīmi.
-- **Motivācija**: XP, līmeņi, svece (dienu sērija) ar rezerves daktīm, dienas mērķis, dienas izaicinājums,
-  dienas sakāmvārds, 25 sasniegumi.
-- **Iestatījumi**: latviešu / angļu valoda, gaišā / tumšā tēma, dienas mērķis, skaņa, vibrācija, atsauksmes.
+- **Arī**: XP un līmeņi, dienas sērija (svece), dienas mērķis, 25 sasniegumi, latviešu / angļu valoda, gaišā / tumšā tēma.
 
-### Kā palaist
-Atver `docs/index.html` jebkurā pārlūkā. Viss ir vienā failā, internets nav vajadzīgs.
+### Lietotne
+Atver **https://gotikalv.netlify.app** telefonā un izvēlies **Pievienot sākuma ekrānam**. Gotika strādās kā lietotne, arī bez interneta.
 
-### Kā publicēt telefonam (GitHub Pages)
-1. GitHub repozitorijā: **Settings → Pages → Branch: `main`, mape `/docs`** → Save.
-2. Pēc minūtes lietotne būs pieejama `https://<lietotājvārds>.github.io/<repozitorijs>/`.
-3. Telefonā atver adresi un izvēlies **Pievienot sākuma ekrānam**. Gotika strādās kā lietotne, arī bez interneta.
-
-### Kā mainīt
-Avota faili ir `src/`. Pēc izmaiņām palaid:
-
-```
-python tools/build.py
-```
-
-Tas saliek `docs/index.html` (fonts tiek iekļauts failā).
+### Izstrāde
+Avota faili ir `src/`. Pēc izmaiņām palaid `python tools/build.py`; tas saliek `docs/index.html` (fonts tiek iekļauts failā).
 
 ---
 
@@ -63,7 +50,10 @@ Tas saliek `docs/index.html` (fonts tiek iekļauts failā).
 - **Reading room**, XP, levels, a candle streak with spare wicks, daily goal, daily challenge, 25 achievements,
   Latvian/English UI, light/dark theme, in-app feedback.
 
-### Run
+### Use
+Open **https://gotikalv.netlify.app** on your phone and choose *Add to Home Screen*. It works offline.
+
+### Run locally
 Open `docs/index.html` in a browser. Edit files in `src/`, then run `python tools/build.py`.
 
 ### Project layout
@@ -78,7 +68,7 @@ src/scan.js           handwriting scanner: photo/stylus -> letters -> best-match
 src/app.js            app logic: lessons, exercises, drawing pad and matcher, progress, settings
 assets/fonts/         UnifrakturMaguntia (SIL Open Font License 1.1, see OFL.txt)
 tools/build.py        builds docs/index.html
-docs/                 the built app + PWA files for GitHub Pages
+docs/                 the built app + PWA files (published on Netlify)
 ```
 
 ### How the handwriting check works
