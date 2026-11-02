@@ -89,4 +89,12 @@ connected-component segmentation and left-to-right grouping. It is a heuristic, 
 - Font: **UnifrakturMaguntia** by Peter Wiegel and j. 'mach' wust, SIL Open Font License 1.1.
 
 ## Licence
-Not chosen yet. The font is under the SIL OFL 1.1 (`assets/fonts/OFL.txt`) whatever licence the code gets.
+
+Copyright (C) 2026 Endijs Eihlers
+
+- **Code** (`src/`, `tools/`, `docs/`): GNU General Public License v3.0, see [LICENSE](LICENSE).
+- **Lesson content and artwork** (texts and exercises in `src/data.js`, the engraving in `src/scene.js`): [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- **Font** UnifrakturMaguntia: SIL Open Font License 1.1, see `assets/fonts/OFL.txt`.
+- The historical source texts themselves are in the public domain.
+
+Kods: GPL-3.0. Mācību saturs un ilustrācijas: CC BY-SA 4.0. Fonts: SIL OFL 1.1.
